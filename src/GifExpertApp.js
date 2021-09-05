@@ -23,11 +23,11 @@ export const GifExpertApp=()=>{
 
         {/* <button onClick={categoryAdd}>Add</button> */}
      
-        <ol>
+        <div className="">
            {categorias.map((categorie,id)=>{
                return <GifImages key={id} category={categorie}/>
            })}
-        </ol>
+        </div>
       
         </>
     )

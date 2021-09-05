@@ -22,16 +22,16 @@ export const GifImages = ({category}) => {
             <div className="rect5"></div>
         </div>
     }
-        <div className="card-grid">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
            
-            <ol >
+           
             {gifs.map((img)=>{
                return <GifView 
                key={img.id}
                {...img}
                ></GifView>
            })}
-            </ol>
+         
         </div>
         </>
 

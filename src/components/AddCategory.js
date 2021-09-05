@@ -23,8 +23,11 @@ import PropTypes from 'prop-types';
     
     return (
         <form onSubmit={handleSubmit}>
-        
-            <input type="text" onChange={handleInputChange} value={inputValue}  placeholder="Categoria"/>
+                <div className="form-outline">
+                <input onChange={handleInputChange} value={inputValue} type="text" id="typeNumber" className="form-control" />
+                <label className="form-label" for="typeNumber">Categoria</label>
+        </div>
+         
         
         </form>
     
